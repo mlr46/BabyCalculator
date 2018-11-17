@@ -1,4 +1,4 @@
-package com.mlr.calculatrice;
+package com.mlr.calculatrice.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mlr.calculatrice.R;
 import com.mlr.calculatrice.models.Operation;
 
 public class MainActivity extends AppCompatActivity {
