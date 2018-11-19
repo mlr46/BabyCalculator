@@ -27,14 +27,19 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
         android:stretchColumns="*"
         android:shrinkColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent" >
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" >
 
         <TableRow
             android:layout_width="match_parent"
@@ -107,6 +112,9 @@
             android:layout_height="match_parent">
 
             <Button style="@style/calculator_button"
+                android:id="@+id/btnClear"
+                android:text="@string/btnClear" />
+            <Button style="@style/calculator_button"
                 android:id="@+id/btn0"
                 android:text="@string/btn0"
                 android:onClick="addDigit"/>
@@ -117,9 +125,6 @@
                 android:id="@+id/btnDivide"
                 android:text="@string/btnDivide"
                 android:onClick="setOperator" />
-            <Button style="@style/calculator_button"
-                android:id="@+id/btnClear"
-                android:text="@string/btnClear" />
         </TableRow>
     </TableLayout>
 
